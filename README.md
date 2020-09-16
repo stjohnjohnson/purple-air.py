@@ -12,6 +12,8 @@ Python script to help pull Purple-Air sensor data into Home Assistant and then f
 
 Following the steps on Home Assistant's [Command-Line Sensor Page](https://www.home-assistant.io/integrations/sensor.command_line/).
 
+In this example, the Purple Air sensor is `34871`, found in the [URL of Purple Air's website](https://www.purpleair.com/map?opt=1/i/mAQI/a0/cC0&select=34871#1/25/-30).
+
 ```yaml
   - platform: command_line
     name: Purple Air Quality AQI
