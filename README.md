@@ -2,7 +2,7 @@
 
 Python script to help pull Purple-Air sensor data into Home Assistant and then feed the color into an Inovelli light switch.
 
-![Home Assistant Display](https://user-images.githubusercontent.com/622065/93287878-7c89a180-f78f-11ea-8a7b-391b845e9d71.png)
+![Home Assistant Display](https://user-images.githubusercontent.com/622065/93288527-da6ab900-f790-11ea-93f8-092ec9725f9d.png)
 ![Safe](https://user-images.githubusercontent.com/622065/93288358-89f35b80-f790-11ea-8776-587cdebbf5fc.jpg)
 ![Unsafe](https://user-images.githubusercontent.com/622065/93288360-8a8bf200-f790-11ea-9a7c-717b7be2bca3.jpg)
 
