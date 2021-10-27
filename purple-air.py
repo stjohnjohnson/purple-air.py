@@ -2,12 +2,12 @@
 
 """Purple-Air Sensor Reader
 
-This script loads the current data (pm2.5, humidity, temperature, 
-pressure) from a given PurpleAir sensor and then calculates the 
+This script loads the current data (pm2.5, humidity, temperature,
+pressure) from a given PurpleAir sensor and then calculates the
 AQI, Describers (name, color, description), and a color value to
 apply to a Inovelli switch.
 
-This expects the sensor ID to be passed as the first value of the 
+This expects the sensor ID to be passed as the first value of the
 script.
 """
 
@@ -15,7 +15,7 @@ import urllib.request
 import json
 import math
 import sys
- 
+
 if len(sys.argv) != 2:
     print('Usage: ./purple-air.py SENSORID', file=sys.stderr)
     exit(1)
@@ -146,7 +146,7 @@ with urllib.request.urlopen('https://www.purpleair.com/json?show={}'.format(Sens
         exit(1)
 
     pm2a = float(data['results'][0]['PM2_5Value'])
-    pm2b = float(data['results'][0]['PM2_5Value'])
+    pm2b = float(data['results'][1]['PM2_5Value'])
     pm2 = (pm2a + pm2b) / 2
     aqi = aqiFromPM(pm2)
 
